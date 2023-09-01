@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <script src="calculator.js" defer></script>
+    <title>Study</title>
+</head>
+<body>
+	<div class="Header">
+		<input id = "Player1" type = "text" class = "Header" style="text-align: left">
+		<input id = "Player2" type = "text" class = "Header" style="text-align: left">
+		<input id = "decide_Button" type = "button" class = "Header" value="決定" style="text-align: center" onclick="NameSet()">
+		<input id = "playerChange_Button" type = "button" class = "Header" value="Player Change" style="text-align: center" onclick="PlayerNameChange()">
+	</div>
+	<div class="point_Row">
+		<label id="lbl_Frame_Number" for="input_point">frame_Number</label>
+		<input id="input_point" type="text">
+    </div>
+  <div class = "container">
+	<div class = "main">
+		<div>
+			<input id="Frame_Title" type = "text" style="text-align: center" class="lbl_Times_Number" value="Player">
+			<input id="lbl_Times_Number1" type = "text" style="text-align: center" class="lbl_Times_Number" value="1">
+			<input id="lbl_Times_Number2" type = "text" style="text-align: center" class="lbl_Times_Number" value="2">
+			<input id="lbl_Times_Number3" type = "text" style="text-align: center" class="lbl_Times_Number" value="3">
+			<input id="lbl_Times_Number4" type = "text" style="text-align: center" class="lbl_Times_Number" value="4">
+			<input id="lbl_Times_Number5" type = "text" style="text-align: center" class="lbl_Times_Number" value="5">
+			<input id="lbl_Times_Number6" type = "text" style="text-align: center" class="lbl_Times_Number" value="6">
+			<input id="lbl_Times_Number7" type = "text" style="text-align: center" class="lbl_Times_Number" value="7">
+			<input id="lbl_Times_Number8" type = "text" style="text-align: center" class="lbl_Times_Number" value="8">
+			<input id="lbl_Times_Number9" type = "text" style="text-align: center" class="lbl_Times_Number" value="9">
+			<input id="lbl_Times_Number10" type = "text" style="text-align: center" class="lbl_Times_Number" value="10">
+		</div>
+		<div>
+			<input id = "Disp_Player1" type = "text" class = "Disp_Player" style="text-align: center" readonly>
+			<input id = "Score1_1_1" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score1_1_2" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score1_2_1" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score1_2_2" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score1_3_1" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score1_3_2" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score1_4_1" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score1_4_2" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score1_5_1" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score1_5_2" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score1_6_1" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score1_6_2" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score1_7_1" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score1_7_2" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score1_8_1" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score1_8_2" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score1_9_1" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score1_9_2" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score1_10_1" type = "text" class = "ScoreLabel10" style="text-align: center" readonly>
+			<input id = "Score1_10_2" type = "text" class = "ScoreLabel10" style="text-align: center" readonly>
+			<input id = "Score1_10_3" type = "text" class = "ScoreLabel10" style="text-align: center" readonly>
+			<div>
+				<input id = "score_Point1_1" type = "text" class = "score_Point" style="text-align: center" readonly>
+				<input id = "score_Point1_2" type = "text" class = "score_Point" style="text-align: center" readonly>
+				<input id = "score_Point1_3" type = "text" class = "score_Point" style="text-align: center" readonly>
+				<input id = "score_Point1_4" type = "text" class = "score_Point" style="text-align: center" readonly>
+				<input id = "score_Point1_5" type = "text" class = "score_Point" style="text-align: center" readonly>
+				<input id = "score_Point1_6" type = "text" class = "score_Point" style="text-align: center" readonly>
+				<input id = "score_Point1_7" type = "text" class = "score_Point" style="text-align: center" readonly>
+				<input id = "score_Point1_8" type = "text" class = "score_Point" style="text-align: center" readonly>
+				<input id = "score_Point1_9" type = "text" class = "score_Point" style="text-align: center" readonly>
+				<input id = "score_Point1_10" type = "text" class = "score_Point" style="text-align: center" readonly>
+			</div>
+			
+		</div>
+		<div>
+			<td><input id = "Disp_Player2" type = "text" class = "Disp_Player" style="text-align: center" readonly></td>
+			<input id = "Score2_1_1" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score2_1_2" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score2_2_1" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score2_2_2" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score2_3_1" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score2_3_2" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score2_4_1" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score2_4_2" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score2_5_1" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score2_5_2" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score2_6_1" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score2_6_2" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score2_7_1" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score2_7_2" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score2_8_1" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score2_8_2" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score2_9_1" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score2_9_2" type = "text" class = "ScoreLabel" style="text-align: center" readonly>
+			<input id = "Score2_10_1" type = "text" class = "ScoreLabel10" style="text-align: center" readonly>
+			<input id = "Score2_10_2" type = "text" class = "ScoreLabel10" style="text-align: center" readonly>
+			<input id = "Score2_10_3" type = "text" class = "ScoreLabel10" style="text-align: center" readonly>
+		</div>
+		<div>
+			<input id = "score_Point2_1" type = "text" class = "score_Point" style="text-align: center" readonly>
+			<input id = "score_Point2_2" type = "text" class = "score_Point" style="text-align: center" readonly>
+			<input id = "score_Point2_3" type = "text" class = "score_Point" style="text-align: center" readonly>
+			<input id = "score_Point2_4" type = "text" class = "score_Point" style="text-align: center" readonly>
+			<input id = "score_Point2_5" type = "text" class = "score_Point" style="text-align: center" readonly>
+			<input id = "score_Point2_6" type = "text" class = "score_Point" style="text-align: center" readonly>
+			<input id = "score_Point2_7" type = "text" class = "score_Point" style="text-align: center" readonly>
+			<input id = "score_Point2_8" type = "text" class = "score_Point" style="text-align: center" readonly>
+			<input id = "score_Point2_9" type = "text" class = "score_Point" style="text-align: center" readonly>
+			<input id = "score_Point2_10" type = "text" class = "score_Point" style="text-align: center" readonly>
+		</div>
+	</div>
+  </div>
+
+</body>
+</html>

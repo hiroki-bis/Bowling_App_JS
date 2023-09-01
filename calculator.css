@@ -1,0 +1,136 @@
+/*クラスに対する指定*/
+.container {
+  width: 1080px;
+  margin: 50px auto;
+  border: 2px solid black;
+  /* border-radius: 5%; */
+  /* border: none; */
+}
+
+.point_Row{
+  font-size: x-large;
+  margin-top: 40px;
+}
+
+/*要素に対する指定*/
+input {
+  width:70px;
+  height: 70px;
+   /* ボタンの文字サイズ */
+   font-size: x-large;
+   /* 数字部分の背景色 */
+   background-color: #dcdcdca4;
+   /* ボタンの詳細設定 */
+   border: none;
+   
+   /* クリック時の黒枠を消す */
+   outline: none;
+}
+
+.lbl_Times_Number{
+  width: 71.5px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #5a5a5a;
+  background-color: #87cefa;
+}
+
+#lbl_Times_Number10{
+  width: 111.5px;
+}
+
+/*クラスに対する指定*/
+.ScoreLabel{
+  width:30px;
+  height: 30px;
+  border: 1px solid #5a5a5a;
+}
+
+.ScoreLabel10 {
+  width: 30px;
+  
+  height: 30px;
+   /* ボタンの文字サイズ */
+   font-size: x-large;
+   /* 数字部分の背景色 */
+   background-color: #dcdcdca4;
+   /* ボタンの詳細設定 */
+   border: 1px solid #5a5a5a;
+}
+
+.ScoreLabel{
+  font-size: 16px;
+}
+.ScoreLabel10{
+  font-size: 16px;
+}
+
+#score_Point1_1 {
+  margin-left: 80px;
+}
+
+#score_Point2_1 {
+  margin-left: 80px;
+}
+
+.score_Point{
+  width: 72px;
+  height: 30px;
+  border: 1px solid #5a5a5a;
+}
+
+#decide_Button{
+  border: 2px solid black;
+}
+
+#playerChange_Button{
+  width: 170px;
+  height: 50px;
+  margin-left: 50px;
+  border-radius: 10px;
+  background: #339cdd;
+}
+
+#input_point{
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: honeydew;
+}
+
+#score_Point1_10{
+  width: 108px;
+}
+
+#score_Point2_10{
+  width: 108px;
+}
+
+.Disp_Player{
+  text-align: left;
+  
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+  #decide_Button:hover {/* hoverは疑似クラス */
+    background: #b6b6b6; /* ディスプレイ部分は無効化 */
+  }
+
+  /* 演算子部分は別の色で上書き */
+  #playerChange_Button:hover { /* hoverは疑似クラス */
+    background: #87cefa;
+  }
+
+  /* クリック時に色を濃くする */
+  #decide_Button:active {/* activeは疑似クラス */
+    background: #5a5a5a;
+  }
+  
+  /* クリック時に色を濃くする */
+  #playerChange_Button:active {/* activeは疑似クラス */
+    background: #2c80b4;
+  }
